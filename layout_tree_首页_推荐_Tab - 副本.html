@@ -1,0 +1,1539 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Tree Structure</title>
+        <style>
+            ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+            .node {
+                cursor: pointer;
+               /*  user-select: none; 禁止文本被选中 */
+            }
+        </style>
+        <script>
+            function toggleNode(id) {
+                var node = document.getElementById(id);
+                if (node) {
+                    node.style.display = (node.style.display === 'block') ? 'none' : 'block';
+                }
+            }
+        </script>
+    </head>
+    <body>      
+    <h1>Layout Tree Structure</h1>
+    <ul>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-0')">
+            ▶ android.widget.FrameLayout (ID: android:id/content) - 214 children
+        </span>
+        <ul id="node-0" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-1')">
+            ▶ android.widget.LinearLayout (ID: ) - 213 children
+        </span>
+        <ul id="node-1" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-2')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/fl_content) - 184 children
+        </span>
+        <ul id="node-2" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-3')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/root_layout) - 183 children
+        </span>
+        <ul id="node-3" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-4')">
+             android.view.View (ID: com.xmcy.hykb:id/status_view) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-4')">
+            ▶ android.view.ViewGroup (ID: ) - 1 children
+        </span>
+        <ul id="node-4" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-5')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-4')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/refresh_layout) - 141 children
+        </span>
+        <ul id="node-4" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-5')">
+             android.widget.RelativeLayout (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ androidx.viewpager.widget.ViewPager (ID: com.xmcy.hykb:id/view_pager) - 139 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/root_view) - 138 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-7')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/content_layout) - 137 children
+        </span>
+        <ul id="node-7" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-8')">
+            ▶ androidx.recyclerview.widget.RecyclerView (ID: com.xmcy.hykb:id/common_recycler) - 136 children
+        </span>
+        <ul id="node-8" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.view.ViewGroup (ID: ) - 38 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.view.ViewGroup (ID: ) - 37 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/item_homeindex_banner2_image_background) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_bigpic_layout_video) - 7 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/jzvps_video_player) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.RelativeLayout (ID: ) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/surface_container) - 1 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/thumb) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.RelativeLayout (ID: com.xmcy.hykb:id/rl_replay) - 1 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/replay) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/item_homeindex_bigpic_view_logo_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_bigpic_layout_time) - 3 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/item_homeindex_bigpic_text_line_y) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/item_homeindex_bigpic_time_line) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/item_homeindex_bigpic_text_line_r) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/item_homeindex_mask1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/item_homeindex_mask2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_banner2_layout_bottom) - 11 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/tv_big_data_view) - 4 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.view.ViewGroup (ID: ) - 3 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/cl_item) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/iv_left) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/tv_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_banner2_layout_title) - 2 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_banner2_text_title) - 1 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/gtwtw_textview_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_banner2_right_layout) - 2 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-13')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/item_homeindex_bigpic_image_score) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-13')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/item_homeindex_banner2_text_score) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/item_homeindex_bottom_mask1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/item_homeindex_bottom_mask2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_bigpic_layout_bottom) - 6 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/item_homeindex_banner2_text_desc) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_bigpic_button_layout) - 4 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/item_homeindex_bigpic_button_download) - 3 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.FrameLayout (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 1 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/text_view) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.view.ViewGroup (ID: ) - 27 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ androidx.viewpager.widget.ViewPager (ID: com.xmcy.hykb:id/view_pager) - 23 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ androidx.recyclerview.widget.RecyclerView (ID: ) - 22 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.widget.FrameLayout (ID: ) - 16 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ androidx.recyclerview.widget.RecyclerView (ID: com.xmcy.hykb:id/recycler_view) - 15 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ androidx.recyclerview.widget.RecyclerView (ID: com.xmcy.hykb:id/recycler_view) - 3 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-15')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/name) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.widget.LinearLayout (ID: com.xmcy.hykb:id/indicator_container) - 2 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/indicator1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/indicator2) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.view.ViewGroup (ID: ) - 38 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/item_homeindex_often_play2_layout_data) - 37 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/item_homeindex_common_title_text_often_play) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ androidx.recyclerview.widget.RecyclerView (ID: com.xmcy.hykb:id/recyclerview_homeindex_item_often_play) - 35 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/two_level_game_icon) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_label) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/two_level_game_icon) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_label) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/two_level_game_icon) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.LinearLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/game_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/two_level_game_icon) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.LinearLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/game_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 6 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/two_level_game_icon) - 5 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-14')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-14" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-15')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-15" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-16')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/cloud_game_label) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/header_view) - 29 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/cl_module_parent_1) - 7 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/iv_bg_image_m1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_mask_1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_black_mask_1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/tv_desc1_m1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/tv_title_m1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/tv_desc2_m1) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/iv_icon_m1) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/cl_module_parent_2) - 13 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_mask_2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_black_mask_2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/title_layout_m2) - 4 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 3 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/title_layout) - 2 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/title) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/sub_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/tv_desc_m2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/btn_m2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/btn_iv_m2) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/iv_bg_image_m2) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/iv_icon_m2) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/cl_module_parent_5) - 6 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_mask_5) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-11')">
+             android.view.View (ID: com.xmcy.hykb:id/view_mask_stroke_5) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/title_layout_m5) - 3 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-13')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/title_layout) - 1 children
+        </span>
+        <ul id="node-13" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-14')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-4')">
+            ▶ android.view.ViewGroup (ID: ) - 37 children
+        </span>
+        <ul id="node-4" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/head_view) - 36 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/search_bar) - 11 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-7')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/search_view) - 5 children
+        </span>
+        <ul id="node-7" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-8')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/search_root_vew) - 4 children
+        </span>
+        <ul id="node-8" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.ViewFlipper (ID: com.xmcy.hykb:id/text_search) - 1 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-10')">
+             android.widget.TextView (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/icon_parent) - 1 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-10')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/icon_search) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-7')">
+            ▶ android.widget.FrameLayout (ID: com.xmcy.hykb:id/menu_view) - 4 children
+        </span>
+        <ul id="node-7" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-8')">
+            ▶ android.view.ViewGroup (ID: ) - 3 children
+        </span>
+        <ul id="node-8" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-9')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/msg_icon) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-9')">
+             android.view.View (ID: com.xmcy.hykb:id/msg_point) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-9')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/download_icon) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.widget.LinearLayout (ID: ) - 23 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-7')">
+            ▶ android.widget.HorizontalScrollView (ID: com.xmcy.hykb:id/tab_layout) - 22 children
+        </span>
+        <ul id="node-7" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-8')">
+            ▶ android.widget.LinearLayout (ID: ) - 21 children
+        </span>
+        <ul id="node-8" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.FrameLayout (ID: ) - 5 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: ) - 3 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/title) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/indicator) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.FrameLayout (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/title) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.FrameLayout (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-12')">
+            ▶ android.widget.FrameLayout (ID: ) - 1 children
+        </span>
+        <ul id="node-12" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-13')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/image_view) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-9')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-9" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-10')">
+            ▶ android.widget.FrameLayout (ID: ) - 3 children
+        </span>
+        <ul id="node-10" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-11')">
+            ▶ android.view.ViewGroup (ID: ) - 2 children
+        </span>
+        <ul id="node-11" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/title) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-12')">
+             android.widget.FrameLayout (ID: ) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-2')">
+             android.view.View (ID: ) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-2')">
+            ▶ android.widget.TabHost (ID: com.xmcy.hykb:id/tabhost_main) - 26 children
+        </span>
+        <ul id="node-2" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-3')">
+            ▶ android.widget.LinearLayout (ID: ) - 25 children
+        </span>
+        <ul id="node-3" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-4')">
+            ▶ android.widget.TabWidget (ID: android:id/tabs) - 24 children
+        </span>
+        <ul id="node-4" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.widget.FrameLayout (ID: ) - 2 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/big_tab_svga) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/gif_tips) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/gif_tips) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/tab_content) - 2 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/image_tab) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/text_tab_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/gif_tips) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/tab_content) - 2 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/image_tab) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/text_tab_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.widget.FrameLayout (ID: ) - 5 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/tab_content) - 3 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/image_tab) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/main_tab_msg_num_tv) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/text_tab_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/gif_tips) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-5')">
+            ▶ android.widget.FrameLayout (ID: ) - 4 children
+        </span>
+        <ul id="node-5" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-6')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/gif_tips) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: green;' onclick="toggleNode('node-6')">
+            ▶ android.view.ViewGroup (ID: com.xmcy.hykb:id/tab_content) - 2 children
+        </span>
+        <ul id="node-6" style="display:block;">
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.ImageView (ID: com.xmcy.hykb:id/image_tab) - 0 children
+        </span>
+        
+    </li>
+    
+    <li>
+        <span class='node' style='color: grey;' onclick="toggleNode('node-7')">
+             android.widget.TextView (ID: com.xmcy.hykb:id/text_tab_title) - 0 children
+        </span>
+        
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+        </ul>
+    </body>
+    </html>
+    
